@@ -198,7 +198,9 @@ width: 400px;
 height: 400px;
 }
 /*---MEDIAiPhone---*/
-@media screen and (max-width: 740px) {
+
+
+@media only screen and (max-width: 740px) {
 header {
 position: absolute;
 }
