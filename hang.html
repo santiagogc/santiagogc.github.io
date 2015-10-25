@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.espacio{
+		padding: 4px;
+		margin: 4px;
+		background-color: #DDD;
+	}
+	</style>
+</head>
+<body>
+	<script>
+
+	/*
+	1. Escojer palabra
+	2. Poner espacios por letra
+	3. Escojer una letra
+	4a. Si la letra no esta, muestra error
+	4b. Mostrar en el lugar correspondiente.
+	5. Si no hay mas de 5 errores o no completo palabra, preguntar otra letra
+	6a. Si hay 5 errores, perdió
+	6b. si completo palabra,  mostrar que gano
+	*/
+	function chooseWord(){
+	//var wordArray = [""]
+	return "Alemania"
+}
+
+function drawSpace(word){
+	for(i=0; i<word.length; i++){
+		var space = document.createElement("span");
+		space.innerText = "_";
+		space.setAttribute("class", "espacio")
+		document.body.appendChild(space)
+	}
+}
+
+function ready(){
+	pal=chooseWord();
+	drawSpace(pal);
+	var adivino = false;
+	var errores = 0;
+	while(adivino == false && errores<=5){
+			var actualLetter = prompt("Say a Letter");
+			
+			if(verifyLetter(actualLetter, pal)){
+				//Dibujar Letra
+				//Actualizar estado 
+			}else{
+				errores ++;
+				console.log(errores);
+				//aumentar errores
+				//mostrar errores
+			}
+
+	}
+	if(adivino){
+		console.log("Felicidades")
+	}else{
+		console.log("PErdiste")
+	}
+}
+
+function verifyLetter(letter){
+
+	if (chooseWord.indexOf(letter) >=0){
+			return true;
+	} else {
+			return false;
+	}
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", ready);
+</script>
+</body>
+</html>
+
