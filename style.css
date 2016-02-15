@@ -555,6 +555,18 @@ img{border: none;}
   margin-top: -111px;
   width: 100%;
 }
+.reportdownload_area {
+  background-image: url("img/newbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline;
+  float: left;
+  margin-top: -111px;
+  width: 100%;
+}
+.textoblanco{
+	color: white;
+}
 .appdownload {
   display: inline;
   float: left;
