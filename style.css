@@ -24,6 +24,34 @@ Tags: light, white, App landing page,landing page,single page,Bootstrap,responsi
   #RESPONSIVE CSS 
 */
 
+/*PRUEBA*/
+
+
+.sideBar {
+    position: fixed;
+    z-index: 1000;
+}
+.sideBar.boxLeft {
+    width: 300px;
+    float:left;
+    padding: 0px 0px 0px 0px;
+    left:0px;
+    background-color: rgba(191, 191, 191, 0.6);
+    top:20%;
+
+}
+.mainPage 
+{
+    padding: 0 0 0 400px;
+}
+
+.mainPage p
+{
+   text-align:left;
+    padding:0 0 0 2px;
+}
+/*prueba*/
+
 
 /*--------------------*/
 /* BASIC TYPOGRAPHY */

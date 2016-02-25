@@ -55,25 +55,6 @@
                     <!-- For Img Logo -->
                     <!--  <a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="logo"></a> -->
                   </div>
-                  <!-- PRUEBA
-                  <div class="sideBar boxLeft" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
-                    <div>
-                      <div style="vertical-align:top;text-align:left;">
-                        <h1>My Sidebar</h1>
-                      </div>
-                      <p style="text-align:left;padding:0 0 0 2px;"><b>Information:</b>
-                      This is some information that you can see even when you scroll.</p>
-                    </div>
-                  </div>
-                  <script>
-                  function bigImg(x) {
-                  x.style.left = "-25%";
-                  }
-                  function normalImg(x) {
-                  x.style.left = "0px";
-                  }
-                  </script>-->
-                  <!-- PRUEBA -->
                   <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right custom_nav mobnav" id="top-menu">
                       <li class="active"><a href="index.html#headerArea">HOME</a></li>
@@ -160,85 +141,111 @@
         </div>
       </header>
       <!-- END HEADER SECTION -->
-      <!-- START FEATURES SECTION -->
-      <section id="featuresSection">
+      
+      <!-- START CONTACT SECTION -->
+      <section id="contact">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-12">
-              <div class="features_ara">
-                <h1>Noticias Relevantes del Día</h1>
-                <!--  <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> -->
-                <div class="features_responsive">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                      <div class="single_features_responsive wow fadeInUp">
-                        <!-- <i class="fa fa-desktop desktop_icon"></i> -->
-                        <img src="img/bbva.png" alt="" style="margin-top: 0px;">
-                        <a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>La torre BBVA ya está aquí</h2></a>
-                        <p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+              <div class="contact_area">
+                <h1>Contacto Colliers</h1>
+                <p>Feel free to ask any questions via the contact form below.</p>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="contact_left wow fadeInLeft">
+                      <h1>Contacto</h1>
+                      <div class="media contact_media">
+                        <i class="fa fa-phone"></i>
+                        <div class="media-body contact_media_body">
+                          <h4>Phone: +52 (55) 5209 3636</h4>
+                        </div>
+                      </div>
+                      <div class="media contact_media">
+                        <i class="fa fa-envelope"></i>
+                        <div class="media-body contact_media_body">
+                          <h4>Email:someone@colliers.com</h4>
+                        </div>
+                      </div>
+                      <div class="media contact_media">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="media-body contact_media_body">
+                          <h4>Address: Paseo de la Reforma 265, 06500, Ciudad de México</h4>
+                        </div>
+                      </div>
+                      <div class="contact_social">
+                        <h1>Social</h1>
+                        <a class="fb" href="https://www.facebook.com/ColliersCdMexico" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter" href="https://twitter.com/colliersmexico" target="_blank"><i class="fa fa-twitter"></i></a>
+                        
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                      <div class="single_features_responsive wow fadeInUp">
-                        <!-- <i class="fa fa-paste font_icon"></i> -->
-                        <img src="img/superama.png" alt="" style="margin-top: 0px;">
-                        <a href="http://www.elfinanciero.com.mx/empresas/wal-mart-exporta-imagen-de-superama-a-centroamerica.html" target="_blank"><h2>Walmart exporta imagen de Superama a Centroamérica</h2></a>
-                        <p>Wal-Mart homologó la imagen de sus sucursales en Costa Rica, Guatemala y Nicaragua con la imagen de Superama, informaron directivos de la cadena, quienes indicaron que la medida permitirá mayor familiación con el formato de supermercados.</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                      <div class="single_features_responsive wow fadeInUp">
-                        <!-- <i class="fa fa-credit-card html_icon"></i> -->
-                        <img src="img/corona.png" alt="" style="margin-top: 0px;">
-                        <a href="http://www.obrasweb.mx/construccion/2016/02/09/modelo-invertira-10-mdd-para-remodelar-edificio-en-aguascalientes" target="_blank"><h2>Modelo invertirá 10 mdd para remodelar edificio en Aguascalientes</h2></a>
-                        <p>La cervecera renovará un inmueble histórico en el complejo Tres Centurias que se convertirá en su nuevo Centro de Servicios Compartidos. El proyecto estará terminado a mediados de 2016.</p>
-                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="contact_right wow fadeInRight">
+                      <div id="form-messages"></div>
+                      <form class="footer_form">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6">
+                            <div class="form-grooup">
+                              <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email (Required)" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control"  cols="30" rows="8" placeholder="Message"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <input class="contact_sendbtn" type="submit" value="Send">
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <!-- BEGAIN GOOGLE MAP -->
+              <div class="google_map wow fadeInUp">
+                <div id="map_canvas"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- START FEATURES PRODUCT AREA -->
-        <div class="features_productarea">
-          <div class="direction_icon">
-            <a id="firstTop" class="dirc_up" href="#">
-              <i class="fa fa-chevron-up"></i>
-            </a>
-            <a id="firstBottom" class="dirc_down" href="#">
-              <i class="fa fa-chevron-down"></i>
-            </a>
-          </div>
-          <div class="container">
-            
-            <!-- START FOOTER SECTION -->
-            <footer id="footer">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <div class="footer_area">
-                      <p>Designed By <a  rel="nofollow">SG</a></p>
-                    </div>
-                  </div>
-                </div>
+      </section>
+      <!-- END CONTACT SECTION -->
+      <!-- START FOOTER SECTION -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="footer_area">
+                <p>Designed By <a  rel="nofollow">SG</a></p>
               </div>
-            </footer>
-            <!-- END FOOTER SECTION -->
-            <!-- JQuery Files -->
-            <!-- Initialize jQuery Library -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-            <!-- Google map -->
-            <script src="https://maps.googleapis.com/maps/api/js"></script>
-            <script src="js/jquery.ui.map.js"></script>
-            <!-- Skds slider -->
-            <script src="js/skdslider.min.js"></script>
-            <!-- Bootstrap js  -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- For smooth animatin  -->
-            <script src="js/wow.min.js"></script>
-            <!-- Custom js -->
-            <script type="text/javascript" src="js/custom.js"></script>
-          </body>
-        </html>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER SECTION -->
+      <!-- JQuery Files -->
+      <!-- Initialize jQuery Library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Google map -->
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/jquery.ui.map.js"></script>
+      <!-- Skds slider -->
+      <script src="js/skdslider.min.js"></script>
+      <!-- Bootstrap js  -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- For smooth animatin  -->
+      <script src="js/wow.min.js"></script>
+      <!-- Custom js -->
+      <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+  </html>
