@@ -391,11 +391,15 @@ img{border: none;}
 .single_features_responsive img{
   margin-top: 70px;
 }
+
+/*YO CAMBIE ESTO PARA QUE EL TEXTO DE LOS MESES DEL CALENDARIO NO SE SEPAREN TANTO....ESTABA EN 49PX*/
 .single_features_responsive h2 {
   color: #666666;
   font-size: 30px;
-  margin-top: 49px;
+  margin-top: 18px;      
 }
+
+
 .single_features_responsive p {
   color: #606060;
   font-size: 15px;
