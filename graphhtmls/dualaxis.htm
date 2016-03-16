@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            zoomType: 'xy'
+        },
+        title: {
+            text: 'Inventario y Tasa de Disponibilidad'
+        },
+        subtitle: {
+            text: 'Source: Colliers International'
+        },
+        xAxis: [{
+            categories: ['4T 2007', '1T 2008', '2T 2008', '3T 2008', '4T 2008','1T 2009', '2T 2009', '3T 2009', '4T 2009','1T 2010', '2T 2010', '3T 2010', '4T 2010','1T 2011', '2T 2011', '3T 2011', '4T 2011','1T 2012', '2T 2012', '3T 2012', '4T 2012', ],
+            crosshair: true
+        }],
+        yAxis: [{ // Primary yAxis
+            labels: {
+                format: '{value}%',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            title: {
+                text: 'Porcentaje',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            opposite: true
+
+        }, { // Secondary yAxis
+            gridLineWidth: 0,
+            title: {
+                text: 'Metros Cuadrados',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            },
+            labels: {
+                format: '{value} m2',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            }
+
+        }, { // Tertiary yAxis
+            gridLineWidth: 0,
+            title: {
+                text: 'Sea-Level Pressure',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            labels: {
+                format: '{value} mb',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            opposite: true
+        }],
+        tooltip: {
+            shared: true
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            x: 80,
+            verticalAlign: 'top',
+            y: 55,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+        },
+        series: [{
+            name: 'Inventario A',
+            type: 'column',
+            yAxis: 1,
+            data: [
+1403784,
+1403784,
+1427253,
+1427253,
+1430103,
+1438044,
+1454704,
+1464072,
+1506309,
+1506923,
+1512830,
+1512830,
+1547003,
+1556211,
+1634901,
+1637494,
+1641257,
+1645846,
+1647846,
+1681139,
+1681139
+
+
+],
+            tooltip: {
+                valueSuffix: ' m2'
+            }
+
+        }, {
+            name: 'Inventario A+',
+            type: 'column',
+            yAxis: 1,
+            data: [1111618,
+1111618,
+1090018,
+1090018,
+1127518,
+1127518,
+1153239,
+1174957,
+1174957,
+1174957,
+1200044,
+1236755,
+1552188,
+1601757,
+1678930,
+1802599,
+1855123,
+1928020,
+2031347,
+2031347,
+2064018
+],
+            marker: {
+                enabled: false
+            },
+            dashStyle: 'shortdot',
+            tooltip: {
+                valueSuffix: ' m2'
+            }
+
+        }, {
+            name: 'Tasa de disponibilidad A+',
+            type: 'spline',
+            data: [7.4,
+6.6,
+6.7,
+5.8,
+6.1,
+8.5,
+9.6,
+10.9,
+10.6,
+10.9,
+10.4,
+10.8,
+12.7,
+14.7,
+14.7,
+17.7,
+15.9,
+16.4,
+16.9,
+14.5,
+11.7
+],
+            tooltip: {
+                valueSuffix: ' %'
+            }
+            
+        }, {
+            name: 'Tasa de disponibilidad A',
+            type: 'spline',
+            data: [3.4,
+3.3,
+2.6,
+2.6,
+2.4,
+4.2,
+6.5,
+6.8,
+7.1,
+7.9,
+7.5,
+7.2,
+9.1,
+9.8,
+8.7,
+7.1,
+8.8,
+8.1,
+7.4,
+7.3,
+6.7
+],
+            tooltip: {
+                valueSuffix: ' %'
+            }
+        }]
+    });
+});
+
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
