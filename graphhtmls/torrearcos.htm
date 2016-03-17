@@ -21,18 +21,18 @@ $(function () {
             text: 'Source: Colliers International'
         },
         xAxis: [{
-            categories: ['4T 2007', '1T 2008', '2T 2008', '3T 2008', '4T 2008','1T 2009', '2T 2009', '3T 2009', '4T 2009','1T 2010', '2T 2010', '3T 2010', '4T 2010','1T 2011', '2T 2011', '3T 2011', '4T 2011','1T 2012', '2T 2012', '3T 2012', '4T 2012', ],
+           categories: ['4T 2007', '1T 2008', '2T 2008', '3T 2008', '4T 2008','1T 2009', '2T 2009', '3T 2009', '4T 2009','1T 2010', '2T 2010', '3T 2010', '4T 2010','1T 2011', '2T 2011', '3T 2011', '4T 2011','1T 2012', '2T 2012', '3T 2012', '4T 2012'],
             crosshair: true
         }],
         yAxis: [{ // Primary yAxis
             labels: {
-                format: '{value}%',
+                format: '${value}',
                 style: {
                     color: Highcharts.getOptions().colors[2]
                 }
             },
             title: {
-                text: 'Porcentaje',
+                text: 'Precio',
                 style: {
                     color: Highcharts.getOptions().colors[2]
                 }
@@ -83,129 +83,66 @@ $(function () {
             backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
         },
         series: [{
-            name: 'Inventario A',
+            name: 'Disponible',
             type: 'column',
             yAxis: 1,
-            data: [
-1403784,
-1403784,
-1427253,
-1427253,
-1430103,
-1438044,
-1454704,
-1464072,
-1506309,
-1506923,
-1512830,
-1512830,
-1547003,
-1556211,
-1634901,
-1637494,
-1641257,
-1645846,
-1647846,
-1681139,
-1681139
-
-
+            data: [300,
+859,
+860,
+860,
+860,
+860,
+833,
+833,
+2524,
+6630,
+4527,
+4527,
+9596,
+7925,
+6608,
+6608,
+3154,
+3654,
+1947,
+3690,
+5274
 ],
             tooltip: {
                 valueSuffix: ' m2'
             }
 
         }, {
-            name: 'Inventario A+',
-            type: 'column',
-            yAxis: 1,
-            data: [1111618,
-1111618,
-1090018,
-1090018,
-1127518,
-1127518,
-1153239,
-1174957,
-1174957,
-1174957,
-1200044,
-1236755,
-1552188,
-1601757,
-1678930,
-1802599,
-1855123,
-1928020,
-2031347,
-2031347,
-2064018
-],
-            marker: {
-                enabled: false
-            },
-            dashStyle: 'shortdot',
-            tooltip: {
-                valueSuffix: ' m2'
-            }
-
-        }, {
-            name: 'Tasa de disponibilidad A+',
+            name: 'Precio',
             type: 'spline',
-            data: [7.4,
-6.6,
-6.7,
-5.8,
-6.1,
-8.5,
-9.6,
-10.9,
-10.6,
-10.9,
-10.4,
-10.8,
-12.7,
-14.7,
-14.7,
-17.7,
-15.9,
-16.4,
-16.9,
-14.5,
-11.7
+            data: [28,
+28,
+27,
+27,
+27,
+27,
+28,
+28,
+27,
+26,
+26,
+25,
+24,
+25,
+26,
+26,
+28,
+28,
+28,
+29,
+30
+
+
 ],
             tooltip: {
-                valueSuffix: ' %'
+                valueSuffix: ' $'
             }
             
-        }, {
-            name: 'Tasa de disponibilidad A',
-            type: 'spline',
-            data: [3.4,
-3.3,
-2.6,
-2.6,
-2.4,
-4.2,
-6.5,
-6.8,
-7.1,
-7.9,
-7.5,
-7.2,
-9.1,
-9.8,
-8.7,
-7.1,
-8.8,
-8.1,
-7.4,
-7.3,
-6.7
-],
-            tooltip: {
-                valueSuffix: ' %'
-            }
         }]
     });
 });

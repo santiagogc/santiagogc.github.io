@@ -1,275 +1,444 @@
-
-	<!--
+<!--
 <div id="eventCalendarNewWindow"></div>
-				<script>
-					$(document).ready(function() {
-						$("#eventCalendarNewWindow").eventCalendar({
-							eventsjson: 'json/events.json.php',
-							openEventInNewWindow: true,
-							showDescription: true // also it can be false
-						});
-					});
-				</script>
+<script>
+	$(document).ready(function() {
+		$("#eventCalendarNewWindow").eventCalendar({
+			eventsjson: 'json/events.json.php',
+			openEventInNewWindow: true,
+			showDescription: true // also it can be false
+		});
+	});
+</script>
 <pre>$(id).eventCalendar({
-  eventsjson: 'file.json',
-  openEventInNewWindow: true,
-  showDescription: true // also it can be false
+	  eventsjson: 'file.json',
+	  openEventInNewWindow: true,
+	  showDescription: true // also it can be false
 });</pre>
-			</div>  
-
-		  -->
-
+</div>
+-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Colliers International 2.0</title>
-		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Slick slider css -->
-		<link href="css/skdslider.css" rel="stylesheet">
-		<!-- Font awesome css -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- smooth animate css file -->
-		<link rel="stylesheet" href="css/animate.css">
-		<!-- Main style css -->
-		<link rel="stylesheet" href="style.css">
-		<!-- Favicon -->
-		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-		<!-- Google Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-		
-		
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<!-- BEGAIN PRELOADER -->
-		<div id="preloader">
-			<div id="status">&nbsp;</div>
-		</div>
-		<!-- END PRELOADER -->
-		<!-- START HEADER SECTION -->
-		<header id="headerArea">
-			<a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="slider_area">
-						<div class="menuarea">
-							<div class="navbar navbar-default navbar-fixed-top past-main" role="navigation">
-								<div class="container">
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										</button>
-										<!-- For Text Logo -->
-										<!-- <a class="navbar-brand logo" href="#"> <img src="img/colliers_logo.png" /> </a> -->
-										<!-- For Img Logo -->
-										<!--  <a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="logo"></a> -->
-									</div>
-									<!-- PRUEBA
-									<div class="sideBar boxLeft" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Colliers International 2.0</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Slick slider css -->
+	<link href="css/skdslider.css" rel="stylesheet">
+	<!-- Font awesome css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- smooth animate css file -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Main style css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- BEGAIN PRELOADER -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+	<!-- END PRELOADER -->
+	<!-- START HEADER SECTION -->
+	<header id="headerArea">
+		<a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="slider_area">
+					<div class="menuarea">
+						<div class="navbar navbar-default navbar-fixed-top past-main" role="navigation">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									</button>
+									<!-- For Text Logo -->
+									<!-- <a class="navbar-brand logo" href="#"> <img src="img/colliers_logo.png" /> </a> -->
+									<!-- For Img Logo -->
+									<!--  <a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="logo"></a> -->
+								</div>
+								<!-- PRUEBA
+								<div class="sideBar boxLeft" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
 										<div>
-											<div style="vertical-align:top;text-align:left;">
-												<h1>My Sidebar</h1>
-											</div>
-											<p style="text-align:left;padding:0 0 0 2px;"><b>Information:</b>
-											This is some information that you can see even when you scroll.</p>
+												<div style="vertical-align:top;text-align:left;">
+														<h1>My Sidebar</h1>
+												</div>
+												<p style="text-align:left;padding:0 0 0 2px;"><b>Information:</b>
+												This is some information that you can see even when you scroll.</p>
 										</div>
-									</div>
-									<script>
-									function bigImg(x) {
-									x.style.left = "-25%";
-									}
-									function normalImg(x) {
-									x.style.left = "0px";
-									}
-									</script>-->
-									<!-- PRUEBA -->
-
-									<div id="navbar" class="navbar-collapse collapse">
-										<ul class="nav navbar-nav navbar-right custom_nav mobnav" id="top-menu">
-											<li><img src="img/logomini.png"></li>
-											<li><a href="index.html#headerArea">HOME</a></li>
-											<li><a href="index.html#featuresSection">NOTICIAS</a></li>
-											<li><a href="panorama.html">PANORAMA</a></li>
-											<li><a href="panorama.html#oferta">REPORTE</a></li>
-											<li  class="active"><a href="calendar.html">EVENTOS</a></li>
-											<li><a href="graficas.html">MERCADO MEXICANO</a></li>
-											<li><a href="masinfo.html">MÁS INFORMACIÓN</a></li>
-											<li><a href="contacto.html">CONTACTO COLLIERS</a></li>
-										</ul>
-										</div><!--/.nav-collapse -->
-									</div>
+								</div>
+								<script>
+								function bigImg(x) {
+								x.style.left = "-25%";
+								}
+								function normalImg(x) {
+								x.style.left = "0px";
+								}
+								</script>-->
+								<!-- PRUEBA -->
+								<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right custom_nav mobnav" id="top-menu">
+										<li><img src="img/logomini.png"></li>
+										<li><a href="index.html#headerArea">HOME</a></li>
+										<li><a href="index.html#featuresSection">NOTICIAS</a></li>
+										<li><a href="panorama.html">PANORAMA</a></li>
+										<li><a href="panorama.html#oferta">REPORTE</a></li>
+										<li  class="active"><a href="calendar.html">EVENTOS</a></li>
+										<li><a href="graficas.html">MERCADO MEXICANO</a></li>
+										<li><a href="masinfo.html">MÁS INFORMACIÓN</a></li>
+										<li><a href="contacto.html">CONTACTO COLLIERS</a></li>
+									</ul>
+									</div><!--/.nav-collapse -->
 								</div>
 							</div>
-							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER SECTION -->
+		<!-- START FEATURES SECTION -->
+		<section id="featuresSection">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="features_ara">
+							<h1>Gráficas sobre el mercado en México</h1>
+							<!--  <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+							amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> -->
+							<div class="features_responsive">
+								<div class="row">
+									<h2 style="text-align: left; padding-left: 1.2%;">Oficinas:</h2>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-desktop desktop_icon"></i> -->
+											
+											<a href="graficas1.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México</h2></a>
+											<img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-paste font_icon"></i> -->
+											<a href="graficas2.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México(2)</h2></a>
+											<img src="graphpreviews/gg2.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas3.html" target="_blank"><h2>Precios de renta clase A+</h2></a>
+											<img src="graphpreviews/gg3.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas4.html" target="_blank"><h2>Disponibilidad en corredores</h2></a>
+											<img src="graphpreviews/gg4.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas5.html" target="_blank"><h2>Disponibilidad en Torre Arcos</h2></a>
+											<img src="graphpreviews/gg5.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas6.html" target="_blank"><h2>Ocupación vs. Desocupación</h2></a>
+											<img src="graphpreviews/gg6.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas7.html" target="_blank"><h2>Inventario y Construcción/Proyectos</h2></a>
+											<img src="graphpreviews/gg7.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas8.html" target="_blank"><h2>Inventario de Edificios</h2></a>
+											<img src="graphpreviews/gg8.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<!-- breakpoint -->
+									
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</header>
-			<!-- END HEADER SECTION -->
-			<!-- START FEATURES SECTION -->
-			<section id="featuresSection">
-				<div class="container">
+			</div>
+			<!-- breakpoint container start -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="features_ara">
+							
+							<!--  <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+							amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> -->
+							<div class="features_responsive">
+								<div class="row">
+									<h2 style="text-align: left; padding-left: 1.2%;">Industrial:</h2>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-desktop desktop_icon"></i> -->
+											
+											<a href="graficas1.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México</h2></a>
+											<img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-paste font_icon"></i> -->
+											<a href="graficas2.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México(2)</h2></a>
+											<img src="graphpreviews/gg2.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas3.html" target="_blank"><h2>Precios de renta clase A+</h2></a>
+											<img src="graphpreviews/gg3.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas4.html" target="_blank"><h2>Disponibilidad en corredores</h2></a>
+											<img src="graphpreviews/gg4.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas5.html" target="_blank"><h2>Disponibilidad en Torre Arcos</h2></a>
+											<img src="graphpreviews/gg5.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas6.html" target="_blank"><h2>Ocupación vs. Desocupación</h2></a>
+											<img src="graphpreviews/gg6.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="single_features_responsive wow fadeInUp">
+											<!-- <i class="fa fa-credit-card html_icon"></i> -->
+											<a href="graficas7.html" target="_blank"><h2>Inventario y Construcción/Proyectos</h2></a>
+											<img src="graphpreviews/gg7.png" alt="" style="margin-top: 0px;">
+											<p></p>
+										</div>
+									</div>
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- breakpoint container END -->
+			<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
 							<div class="features_ara">
-								<h1>Gráficas sobre el mercado en México</h1>
+						
 								<!--  <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
 								amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> -->
 								<div class="features_responsive">
 									<div class="row">
+									<h2 style="text-align: left; padding-left: 1.2%;">Retail:</h2>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-desktop desktop_icon"></i> -->
 												
-												<a href="graficas1.html" target="_blank"><h2>Acceder</h2></a>
+												<a href="graficas1.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México</h2></a>
 												<img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;">
-												<p>Inventarios y Tasa de disponibilidad México</p>
+												<p></p>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-paste font_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>FEBRERO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+												<a href="graficas2.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México(2)</h2></a>
+												<img src="graphpreviews/gg2.png" alt="" style="margin-top: 0px;">
+												<p></p>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>MARZO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+												<a href="graficas3.html" target="_blank"><h2>Precios de renta clase A+</h2></a>
+												<img src="graphpreviews/gg3.png" alt="" style="margin-top: 0px;">
+												<p></p>
+											</div>
+										</div>
+									<div class="col-lg-4 col-md-4">
+											<div class="single_features_responsive wow fadeInUp">
+												<!-- <i class="fa fa-credit-card html_icon"></i> -->
+												<a href="graficas4.html" target="_blank"><h2>Disponibilidad en corredores</h2></a>
+												<img src="graphpreviews/gg4.png" alt="" style="margin-top: 0px;">
+												<p></p>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>ABRIL</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+												<a href="graficas5.html" target="_blank"><h2>Disponibilidad en Torre Arcos</h2></a>
+												<img src="graphpreviews/gg5.png" alt="" style="margin-top: 0px;">
+												<p></p>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>MAYO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+												<a href="graficas6.html" target="_blank"><h2>Ocupación vs. Desocupación</h2></a>
+												<img src="graphpreviews/gg6.png" alt="" style="margin-top: 0px;">
+												<p></p>
 											</div>
 										</div>
 										<div class="col-lg-4 col-md-4">
 											<div class="single_features_responsive wow fadeInUp">
 												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>JUNIO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
+												<a href="graficas7.html" target="_blank"><h2>Inventario y Construcción/Proyectos</h2></a>
+												<img src="graphpreviews/gg7.png" alt="" style="margin-top: 0px;">
+												<p></p>
 											</div>
 										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>JULIO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>AGOSTO</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>SEPTIEMBRE</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>OCTUBRE</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>NOVIEMBRE</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4">
-											<div class="single_features_responsive wow fadeInUp">
-												<!-- <i class="fa fa-credit-card html_icon"></i> -->
-												<a href="http://www.cnnexpansion.com/fotogalerias/2016/02/10/la-torre-bbva-bancomer-ya-esta-aqui" target="_blank"><h2>DICIEMBRE</h2></a>
-												<img src="img/bbva.png" alt="" style="margin-top: 0px;">
-												<p>El edificio busca mejorar la cultura corporativa de la empresa; la institución de origen español es el mayor banco en México.</p>
-											</div>
-										</div>
+										
+										<!-- breakpoint -->
+									
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- START FEATURES PRODUCT AREA -->
-				<div class="features_productarea">
-					<div class="direction_icon">
-						<a id="firstTop" class="dirc_up" href="#">
-							<i class="fa fa-chevron-up"></i>
-						</a>
-						<a id="firstBottom" class="dirc_down" href="#">
-							<i class="fa fa-chevron-down"></i>
-						</a>
-					</div>
-					<div class="container">
-						
-						<!-- START FOOTER SECTION -->
-						<footer id="footer">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-12 col-md-12">
-										<div class="footer_area">
-											<p>Designed By <a  rel="nofollow">SG</a></p>
+				<!-- hereeee -->
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="features_ara">
+								
+								<!--  <p> Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+								amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> -->
+								<div class="features_responsive">
+									<div class="row">
+									<h2 style="text-align: left; padding-left: 1.2%;">Indicadores:</h2>
+										<div class="col-lg-4 col-md-4">
+											<div class="single_features_responsive wow fadeInUp">
+												<!-- <i class="fa fa-desktop desktop_icon"></i> -->
+												
+												<a href="graficas1.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México</h2></a>
+												<img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;">
+												<p></p>
+											</div>
 										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="single_features_responsive wow fadeInUp">
+												<!-- <i class="fa fa-paste font_icon"></i> -->
+												<a href="graficas2.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México(2)</h2></a>
+												<img src="graphpreviews/gg2.png" alt="" style="margin-top: 0px;">
+												<p></p>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="single_features_responsive wow fadeInUp">
+												<!-- <i class="fa fa-credit-card html_icon"></i> -->
+												<a href="graficas3.html" target="_blank"><h2>Precios de renta clase A+</h2></a>
+												<img src="graphpreviews/gg3.png" alt="" style="margin-top: 0px;">
+												<p></p>
+											</div>
+										</div>
+									
+										<!-- breakpoint -->
+									
+
 									</div>
 								</div>
 							</div>
-						</footer>
-						<!-- END FOOTER SECTION -->
-						<!-- JQuery Files -->
-						<!-- Initialize jQuery Library -->
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-						<!-- Google map -->
-						<script src="https://maps.googleapis.com/maps/api/js"></script>
-						<script src="js/jquery.ui.map.js"></script>
-						<!-- Skds slider -->
-						<script src="js/skdslider.min.js"></script>
-						<!-- Bootstrap js  -->
-						<script src="js/bootstrap.min.js"></script>
-						<!-- For smooth animatin  -->
-						<script src="js/wow.min.js"></script>
-						<!-- Custom js -->
-						<script type="text/javascript" src="js/customcalendar.js"></script>
-					</body>
-				</html>
+						</div>
+					</div>
+				</div>
+			<!-- START FEATURES PRODUCT AREA -->
+			<div class="features_productarea">
+				<div class="direction_icon">
+					<a id="firstTop" class="dirc_up" href="#">
+						<i class="fa fa-chevron-up"></i>
+					</a>
+					<a id="firstBottom" class="dirc_down" href="#">
+						<i class="fa fa-chevron-down"></i>
+					</a>
+				</div>
+				<div class="container">
+					
+					<!-- START FOOTER SECTION -->
+					<footer id="footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12 col-md-12">
+									<div class="footer_area">
+										<p>Designed By <a  rel="nofollow">SG</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					<!-- END FOOTER SECTION -->
+					<!-- JQuery Files -->
+					<!-- Initialize jQuery Library -->
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+					<!-- Google map -->
+					<script src="https://maps.googleapis.com/maps/api/js"></script>
+					<script src="js/jquery.ui.map.js"></script>
+					<!-- Skds slider -->
+					<script src="js/skdslider.min.js"></script>
+					<!-- Bootstrap js  -->
+					<script src="js/bootstrap.min.js"></script>
+					<!-- For smooth animatin  -->
+					<script src="js/wow.min.js"></script>
+					<!-- Custom js -->
+					<script type="text/javascript" src="js/customcalendar.js"></script>
+				</body>
+			</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Disponibilidad en corredores'
+        },
+        subtitle: {
+            text: 'Source: Colliers International'
+        },
+        xAxis: {
+            categories: [
+                'Bosques de las lomas',
+                'Insurgentes',
+                'Interlomas',
+                'Lomas Altas',
+                'Lomas Palmas',
+                'Norte',
+                'Periferico Sur',
+                'Polanco',
+                'Reforma',
+                'Santa Fe'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Metros Cuadrados (m2)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} m2</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '3T 2011',
+            data: [32863,
+65964,
+6191,
+2072,
+27755,
+6677,
+37732,
+23520,
+20227,
+218389
+]
+
+        }, {
+            name: '4T 2011',
+            data: [34990,
+46889,
+5082,
+2805,
+47366,
+5324,
+72520,
+70639,
+14640,
+190700
+]
+
+        }, {
+            name: '1T 2012',
+            data: [36163,
+66047,
+7831,
+3422,
+51774,
+5985,
+53302,
+82395,
+35697,
+167052
+]
+
+        }, {
+            name: '2T 2012',
+            data: [33589,
+86051,
+6410,
+4530,
+42931,
+5962,
+47276,
+70973,
+76474,
+155449
+]
+
+        }, {
+            name: '3T 2012',
+            data: [25573,
+81356,
+5627,
+2903,
+41752,
+5842,
+31972,
+65670,
+67957,
+143182
+]
+
+        }, {
+            name: '4T 2012',
+            data: [25861,
+56263,
+4273,
+4856,
+42074,
+4822,
+33193,
+54185,
+63152,
+106823
+]
+
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
