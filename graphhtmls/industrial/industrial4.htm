@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            zoomType: 'xy'
+        },
+        title: {
+            text: 'Torre Arcos'
+        },
+        subtitle: {
+            text: 'Source: Colliers International'
+        },
+        xAxis: [{
+           categories: ['4T 2010','1T 2011', '2T 2011', '3T 2011', '4T 2011','1T 2012', '2T 2012', '3T 2012', '4T 2012','1T 2013', '2T 2013', '3T 2013', '4T 2013','1T 2014', '2T 2014', '3T 2014', '4T 2014','1T 2015', '2T 2015', '3T 2015', '4T 2015'],
+            crosshair: true
+        }],
+        yAxis: [{ // Primary yAxis
+            labels: {
+                format: '${value}',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            title: {
+                text: 'Precio',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            opposite: true
+
+        }, { // Secondary yAxis
+            gridLineWidth: 0,
+            title: {
+                text: 'Metros Cuadrados',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            },
+            labels: {
+                format: '{value} m2',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            }
+
+        }, { // Tertiary yAxis
+            gridLineWidth: 0,
+            title: {
+                text: 'Sea-Level Pressure',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            labels: {
+                format: '{value} mb',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            opposite: true
+        }],
+        tooltip: {
+            shared: true
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            x: 80,
+            verticalAlign: 'top',
+            y: 55,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+        },
+        series: [{
+            name: 'Disponible',
+            type: 'column',
+            yAxis: 1,
+            data: [41716,
+39501,
+7000,
+7000,
+9750,
+7000,
+6300,
+6300,
+6300,
+7050,
+0,
+0,
+7050,
+7050,
+39523,
+39523,
+39523,
+39523,
+41716,
+41716
+
+],
+            tooltip: {
+                valueSuffix: ' m2'
+            }
+
+        }, {
+            name: 'Precio',
+            type: 'spline',
+            data: [6.12,
+4.7,
+4.3,
+4.3,
+4.45,
+4.45,
+4.45,
+4.45,
+4.45,
+4.45,
+0,
+0,
+5,
+5,
+4.8,
+4.8,
+4.8,
+4.8,
+4.9,
+4.9
+
+
+
+],
+            tooltip: {
+                valueSuffix: ' $'
+            }
+            
+        }]
+    });
+});
+
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
