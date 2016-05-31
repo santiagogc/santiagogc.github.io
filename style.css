@@ -811,7 +811,7 @@ img{border: none;}
 .slider_content{
   float: left;
   display: inline;
-  width: 100%;
+  width: 99%;
   text-align: center;
 }
 .slider_content a {
@@ -836,9 +836,9 @@ img{border: none;}
   margin: 0 4px;
 }
 .slider_content span {
-  color: #CCCCCC;
+  color: #424242;
   display: block;  
-  font-size: 20px;
+  font-size: 35px;
 }
 .carousel-indicators {
   bottom: 10px;

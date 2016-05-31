@@ -25,7 +25,7 @@
     /*  1.HEADER SLIDER
     /* ----------------------------------------------------------- */
 
-    jQuery('#demo1').skdslider({delay:5000, animationSpeed: 2000,showNextPrev:false,showPlayButton:false,autoSlide:true,animationType:'fading'});
+    jQuery('#demo1').skdslider({delay:9000, animationSpeed: 2000,showNextPrev:false,showPlayButton:false,autoSlide:true,animationType:'fading'});
       
       jQuery('#responsive').change(function(){
         $('#responsive_wrapper').width(jQuery(this).val());
