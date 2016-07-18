@@ -48,7 +48,7 @@ $(function () {
                 }
             },
             labels: {
-                format: '{value} m2',
+                format: '{value} m<sup>2</sup>',
                 style: {
                     color: Highcharts.getOptions().colors[0]
                 }
@@ -57,7 +57,7 @@ $(function () {
         }, { // Tertiary yAxis
             gridLineWidth: 0,
             title: {
-                text: 'Sea-Level Pressure',
+                text: '',
                 style: {
                     color: Highcharts.getOptions().colors[1]
                 }
@@ -112,7 +112,7 @@ $(function () {
 
 ],
             tooltip: {
-                valueSuffix: ' m2'
+                valueSuffix: ' m<sup>2</sup>'
             }
 
         }, {
@@ -146,7 +146,7 @@ $(function () {
             },
             dashStyle: 'shortdot',
             tooltip: {
-                valueSuffix: ' m2'
+                valueSuffix: ' m<sup>2</sup>'
             }
 
         }, {

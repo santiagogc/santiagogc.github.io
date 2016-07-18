@@ -31,7 +31,7 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Total fruit consumption'
+                text: ''
             },
             stackLabels: {
                 enabled: false,
@@ -54,7 +54,7 @@ $(function () {
         },
         tooltip: {
             headerFormat: '<b>{point.x}</b><br/>',
-            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            pointFormat: '{series.name}: {point.y} m2<br/>Total: {point.stackTotal} m2'
         },
         plotOptions: {
             column: {
