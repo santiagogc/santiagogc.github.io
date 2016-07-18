@@ -159,7 +159,7 @@
   var zoom= $('#map_canvas').gmap('option', 'zoom');
     
   $('#map_canvas').gmap().bind('init', function(ev, map) {
-    $('#map_canvas').gmap('addMarker', {'position': '19.4289973,-99.1651832', 'bounds': true});
+    $('#map_canvas').gmap('addMarker', {'position': '19.4290973,-99.1651832', 'bounds': true});
     $('#map_canvas').gmap('option', 'zoom', 17);
 
   });
