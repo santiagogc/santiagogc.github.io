@@ -46,6 +46,13 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
+
+
+<!-- IFRAMES PARA LAS GRAFICAS -->
+ <img id="blurAll" src="img/blurAll.png" alt="">
+<iframe id="tooltip" src="graphhtmls/dualaxis.htm"></iframe>
+
+<!-- IFRAMES PARA LAS GRAFICAS -->
 <body>
 	<!-- BEGAIN PRELOADER -->
 	<div id="preloader">
@@ -130,7 +137,8 @@
 											<!-- <i class="fa fa-desktop desktop_icon"></i> -->
 											
 											<a href="graficas1.html" target="_blank"><h2>Inventarios y Tasa de disponibilidad México</h2></a>
-											<img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;">
+											<div id="hoverMe"><img src="graphpreviews/gg1.png" alt="" style="margin-top: 0px;"></div>
+											
 											<p></p>
 										</div>
 									</div>
@@ -418,5 +426,7 @@
 					<script src="js/wow.min.js"></script>
 					<!-- Custom js -->
 					<script type="text/javascript" src="js/customcalendar.js"></script>
+					<script src="js/hoverpopup.js"></script>
+
 				</body>
 			</html>
