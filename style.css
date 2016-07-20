@@ -25,7 +25,7 @@ Tags: light, white, App landing page,landing page,single page,Bootstrap,responsi
 */
 
 /*PRUEBA HOVER POPUP*/
-#tooltip {
+#tooltip, #tooltip2, #tooltip3, #tooltip4, #tooltip5, #tooltip6, #tooltip7, #tooltip8, #tooltip9, #tooltip10, #tooltip11, #tooltip12, #tooltip13, #tooltip14, #tooltip15, #tooltip16, #tooltip17, #tooltip18, #tooltip19, #tooltip20, #tooltip21, #tooltip22, #tooltip23, #tooltip24{
     position: absolute; 
     top: 50%;
     left: 0%;
