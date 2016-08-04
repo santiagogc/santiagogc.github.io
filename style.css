@@ -80,10 +80,15 @@ body{
   overflow-x: hidden !important; 
   
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h5,h6{
   font-family: 'Roboto', sans-serif;
   color: #FFD200;
 }
+
+h4{
+  color: black;
+}
+
  h1 {
   color: #FFD200;  
   font-size: 47px;
@@ -439,6 +444,13 @@ img{border: none;}
 
 .featprodcs_img{
   float: left;
+  display: inline;
+  width: 95%;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.featprodcs_img_2{
   display: inline;
   width: 95%;
   text-align: center;
